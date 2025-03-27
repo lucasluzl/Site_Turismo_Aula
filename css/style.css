@@ -5,3 +5,39 @@
 .nav-link{
     color:white !important;
 }
+.car-img{
+    max-height: 35em !important;
+}
+.carousel-caption{
+    display:flex !important;
+    justify-content: space-between !important;
+    background-color: rgba(82, 77, 77, 0.739) !important;
+}
+
+.divisao{
+    background-color: rgb(47, 47, 114) !important;
+    text-align: center !important;
+    color: white !important;
+    padding:2em !important;
+}
+
+
+
+.sec-pacotes{
+    display: flex !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    justify-content: center !important;
+    margin: 1% !important;
+
+}
+.card{
+    padding: 1% !important;
+    margin: 0% 1% 1% !important;
+}
+.sec-contato{
+    margin-bottom: 10% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+
+}
