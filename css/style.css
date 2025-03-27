@@ -1,9 +1,21 @@
 .nav-top{
-    background-color: rgb(47,47,114)!important;
+    background-color: #DCD4BE !important;
 }
 
 .nav-link{
     color:white !important;
+    background-color: #5B5B5D !important;
+    margin: 0.3em !important;
+    font-weight: bold !important;
+    border-radius: 50%;
+
+}
+
+.btn-primary{
+    color: white !important;
+    background-color: #5B5B5D !important;
+    font-weight: bold !important;
+    border-radius: 50%;
 }
 .car-img{
     max-height: 35em !important;
@@ -36,10 +48,10 @@
   }
 
 .divisao{
-    background-color: rgb(47, 47, 114) !important;
+    background-color: #FF5C00 !important;
     text-align: center !important;
     color: white !important;
-    padding:2em !important;
+    padding: 1em !important;
 }
 
 
@@ -62,11 +74,9 @@
     margin-right: 10% !important;
 
 }
-
-.caption-left{
-    text-align: center!important;
-
-}
-img{
-
+footer{
+    background-color: #DCD4BE !important;
+    padding: 1em !important;
+    color: white !important;
+    text-align: center !important;
 }
