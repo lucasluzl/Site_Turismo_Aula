@@ -96,7 +96,7 @@
 
 @keyframes glowing {
   0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
+  50% { background-position: 0 0; }
   100% { background-position: 0 0; }
 }
 
@@ -125,7 +125,7 @@
 }
   
   .carousel-item img {
-    width: 0%;
+    width: 100%;
     height: 0%;
     object-fit: contain !important;
   }
@@ -225,13 +225,77 @@ container{
   right:0 !important;
   width: 600px;
   height: 500px;
-  background: #fff;
+  background: #DCD4BE !important;
  
 }
 .mapBox iframe{
   width: 100%;
   height: 100%;
  
+  
+}
+.patrocinadores-wrapper {
+  position: center;
+  overflow: hidden;
+  width: max-content;
+  background-color: #fff !important;
+  background: #fff !important;
+  border-radius: 12px;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
+/* Track de logos */
+.patrocinadores-track {
+  display: flex;
+  width: 100%; /* Garante que ocupe o necessário */
+  animation: scroll-patrocinadores 50s linear infinite;
+}
 
+.patrocinadores-track img {
+  margin: 0 20px;
+  height: 80px;
+  object-fit: contain ;
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+
+.patrocinadores-track img:hover {
+  transform: scale(1.1);
+  border-radius: 50%;
+}
+
+/* Criamos uma cópia automática dos itens */
+.patrocinadores-track::after {
+  content: attr(data-duplicate);
+}
+
+/* Animação infinita */
+@keyframes scroll-patrocinadores {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pausa ao passar o mouse */
+.patrocinadores-wrapper:hover .patrocinadores-track {
+  animation-play-state: paused;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .patrocinadores-track img {
+    height: 60px;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .patrocinadores-track img {
+    height: 40px;
+    margin: 0 10px;
+  }
 }
